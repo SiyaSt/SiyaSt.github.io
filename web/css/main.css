@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+#TarotReading{
+    margin: 10px 50px 50px;
+    background-color: #E8E4C7;
+    width: 1300px;
+    height: 900px;
+    box-shadow:
+            0 4px 8px rgba(0, 0, 0, 0.25),
+             0 4px 8px rgba(0, 0, 0, 0.25),
+            0 4px 8px rgba(0, 0, 0, 0.25),
+             0 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+
+h2{
+    background-color: #E8E4C7;
+    float: left;
+    margin: 30px 50px 50px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 64px;
+    color: #162847;
+}
