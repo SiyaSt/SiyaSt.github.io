@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+#TarotReading{
+    margin: 10px 50px 50px 20px;
+    background-color: #E8E4C7;
+    width: 1100px;
+    height: 700px;
+    box-shadow:
+            0 4px 8px rgba(0, 0, 0, 0.25),
+             0 4px 8px rgba(0, 0, 0, 0.25),
+            0 4px 8px rgba(0, 0, 0, 0.25),
+             0 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    position: relative;
+    float: left;
+}
+
+#TarotReading h2{
+    background-color: #E8E4C7;
+    float: left;
+    margin: 30px 50px 50px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 64px;
+    color: #162847;
+}
+
+#TarotReading img{
+    background-color: #E8E4C7;
+    width: 300px;
+    height: 500px;
+    box-shadow:
+            0 4px 8px rgba(0, 0, 0, 0.25),
+            0 4px 8px rgba(0, 0, 0, 0.25),
+            0 4px 8px rgba(0, 0, 0, 0.25),
+            0 4px 8px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 70px auto auto;
+
+}
+
+#TarotReading .description{
+    background-color: #F2EFEA;
+    width: 1050px;
+    height: 80px;
+    border-radius: 9px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 590px auto auto;
+    text-align: center;
+    padding: 5px;
+}
+
+#TarotReading .description p{
+    background-color: #F2EFEA;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    color: #162847;
+    margin-top: 5px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+#TarotReading button{
+    background-color: #F2EFEA;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    color: #162847;
+    border: none;
+    border-radius: 9px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    left: 30px;
+    top: 120px;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+#TarotReading button:hover{
+    background-color: #E75136;
+}
+
+#aboutTarot{
+    float: left;
+}
+
+#aboutTarot h2{
+    background-color: #F2EFEA;
+    float: left;
+    margin: 10px 50px 50px 20px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 64px;
+    color: #162847;
+    width: 1345px;
+    padding: 20px;
+    border-radius: 9px;
+    text-align: left;
+    box-shadow:
+            0 4px 8px rgba(0, 0, 0, 0.25),
+            0 4px 8px rgba(0, 0, 0, 0.25),
+            0 4px 8px rgba(0, 0, 0, 0.25),
+            0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+#aboutTarot #cardSearch{
+    text-align: left;
+    margin: 10px 50px 50px 20px;
+    background-color: #E8E4C7;
+    width: 350px;
+    height: 250px;
+    border-radius: 9px;
+    float: left;
+    padding: 10px;
+}
+
+#cardSearch form{
+    background-color: #E8E4C7;
+    margin: 20px;
+}
+
+#cardSearch label{
+    background-color: #E8E4C7;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 35px;
+    color: #162847;
+}
+
+#cardSearch input{
+    background-color: #F2EFEA;
+    border: none;
+    border-radius: 9px;
+    width: 290px;
+    height: 65px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 30px;
+    color: #162847;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+#tarotDescription{
+    width: 920px;
+    height: 600px;
+    float: left;
+    background-color: #E8E4C7;
+    margin: 10px 50px 20px;
+    border-radius: 9px;
+    text-align: right;
+    position: relative;
+}
+
+#tarotDescription img{
+    background-color: #E8E4C7;
+    width: 250px;
+    height: 400px;
+    box-shadow:
+            0 4px 8px rgba(0, 0, 0, 0.25),
+            0 4px 8px rgba(0, 0, 0, 0.25),
+            0 4px 8px rgba(0, 0, 0, 0.25),
+            0 4px 8px rgba(0, 0, 0, 0.25);
+    margin: 50px 100px 50px 50px;
+}
+
+#tarotDescription .description{
+    text-align: left;
+    background-color: #F2EFEA;
+    width: 450px;
+    height: 500px;
+    border-radius: 9px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 50px auto auto 30px;
+}
+
+#tarotDescription .description p{
+    background-color: #F2EFEA;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+    color: #162847;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    margin: 30px 20px 20px;
+    line-height: 35px;
+}
+
+
+
