@@ -12,50 +12,57 @@ html {
 
 header{
     width: 100%;
-    height: 140px;
+    height: 22vh;
     background-color: #F2EFEA;
     margin-bottom: 50px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 h1{
     background-color: #F2EFEA;
-    float: left;
     color: #162847;
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    font-size: 80px;
-    margin: 50px 50px 50px 50px;
+    font-size: 12vh;
+    margin-left: 20px;
 }
 
 .logo{
     background-color: #F2EFEA;
-    float: left;
-    margin-left: 40px;
-    margin-top: 20px ;
+    border-radius: 50%;
+    height: 17vmin;
+    width: 17vmin;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .logoImg{
+    background-color: #96ADD6;
     border-radius: 50%;
-    height: 110px;
-    width: 110px;
+    height: 17vmin;
+    width: 17vmin;
 }
 
 
 .dropdown {
     position: relative;
     display: inline-block;
-    float: right;
-    background-color: #F2EFEA;
+    background-color: rgba(242, 239, 234, 0);
+    margin-bottom: 40px;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 150px;
+    min-width: 9vw;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -83,8 +90,30 @@ h1{
 #menu{
     background-color: #F2EFEA;
     color: #E75136;
-    font-size: 50px;
+    font-size: 8vh;
     border: none;
-    margin: 50px 70px 20px 50px;
+    margin: 50px 70px 20px 30px;
+}
+
+@media  screen and (max-width: 950px){
+    header{
+        height: 24vh;
+    }
+    h1{
+        font-size: 8vh;
+
+    }
+    #menu{
+        font-size: 6vh;
+    }
+    .logoImg{
+        height: 13vmin;
+        width: 13vmin;
+    }
+    .logo{
+        height: 13vmin;
+        width: 13vmin;
+    }
+
 }
 
