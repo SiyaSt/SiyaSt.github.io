@@ -1,21 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
-
+.side{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-areas:
+'as1'
+'as2'
+'as3';
+}
 aside{
     background-color: #F2EFEA;
-    position: relative;
-    float: left;
     width: 210px;
     height: 210px;
     text-align: center;
     border-radius: 9px;
     padding: 5px;
-    margin: 10px;
     box-shadow:
             0 4px 8px rgba(0, 0, 0, 0.25),
             0 4px 8px rgba(0, 0, 0, 0.25),
             0 4px 8px rgba(0, 0, 0, 0.25),
             0 4px 8px rgba(0, 0, 0, 0.25);
+    margin: 20px;
 }
+#aside1{grid-area: as1}
+#aside2{grid-area: as2}
+#aside3{grid-area: as3}
+
 
 #aside1 img{
     width: 160px;
@@ -39,4 +48,53 @@ h3{
     height: 160px;
     background-color: #F2EFEA;
     margin: 5px;
+}
+
+@media screen and (max-width: 750px) {
+    .side{
+        grid-template-areas: 'as1 as2 as3';
+        align-items: center;
+    }
+    aside{
+        width: 175px;
+        height: 175px;
+    }
+    #aside1 img{
+        width: 130px;
+        height: 130px;
+    }
+    #aside2 img{
+        width: 130px;
+        height: 130px;
+    }
+    h3{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+    #TarotReading{
+        flex: 100%;
+    }
+    .side{
+        grid-template-areas:
+'as1'
+'as2'
+'as3';
+    }
+    aside{
+        width: 90vw;
+        height: 35px;
+        margin: 10px 10px 10px 20px;
+    }
+    #aside1 img{
+        display: none;
+    }
+    #aside2 img{
+        display: none;
+    }
+    h3{
+        font-size: 20px;
+    }
 }

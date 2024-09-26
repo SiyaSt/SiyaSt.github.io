@@ -4,7 +4,9 @@
     margin: 0;
     padding: 0;
     background-color: #96ADD6;
+    box-sizing: border-box;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -23,13 +25,13 @@ header{
 }
 
 h1{
-    background-color: #F2EFEA;
+    background-color: rgba(242, 239, 234, 0);
     color: #162847;
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    font-size: 12vh;
+    font-size: 11.5vh;
     margin-left: 20px;
 }
 
@@ -64,7 +66,7 @@ h1{
     background-color: #f1f1f1;
     min-width: 9vw;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 2;
 }
 
 

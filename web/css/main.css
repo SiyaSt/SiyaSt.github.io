@@ -1,36 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #TarotReading{
-    margin: 10px 50px 50px 20px;
-    background-color: #E8E4C7;
-    width: 1100px;
-    height: 700px;
+    flex: 60%;
+    position: relative;
+    width: 1000vw;
+    height: 104vh;
+    background-color: #e8e4c7;
     box-shadow:
             0 4px 8px rgba(0, 0, 0, 0.25),
              0 4px 8px rgba(0, 0, 0, 0.25),
             0 4px 8px rgba(0, 0, 0, 0.25),
              0 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
-    position: relative;
-    float: left;
+    margin: 20px;
+    z-index: 1;
 }
 
 #TarotReading h2{
     background-color: #E8E4C7;
-    float: left;
-    margin: 30px 50px 50px;
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-size: 64px;
+    font-size: 11vh;
     color: #162847;
+    margin: 30px 50px 70px 20px;
 }
 
 #TarotReading img{
     background-color: #E8E4C7;
-    width: 300px;
-    height: 500px;
+    width: 45vmin;
+    height: 70vmin;
     box-shadow:
             0 4px 8px rgba(0, 0, 0, 0.25),
             0 4px 8px rgba(0, 0, 0, 0.25),
@@ -42,35 +47,36 @@
     top: 0;
     bottom: 0;
     right: 0;
-    margin: 70px auto auto;
+    margin: 50px auto;
 
 }
 
 #TarotReading .description{
-    background-color: #F2EFEA;
-    width: 1050px;
-    height: 80px;
-    border-radius: 9px;
     position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    margin: 590px auto auto;
+    margin: 60vh 40px;
+    background-color: #F2EFEA;
+    border-radius: 9px;
     text-align: center;
     padding: 5px;
+    word-wrap: break-word;
+    z-index: 2;
+    display: inline-block;
+    overflow: hidden;
 }
 
 #TarotReading .description p{
-    background-color: #F2EFEA;
+    background-color: rgba(242, 239, 234, 0);
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-size: 20px;
+    font-size: 25px;
     color: #162847;
-    margin-top: 5px;
+    margin-top: 7px;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    display: block;
+    overflow-y: scroll;
+    height: 10vh;
 }
 
 #TarotReading button{
@@ -79,12 +85,12 @@
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-size: 30px;
+    font-size: 4vh;
     color: #162847;
     border: none;
     border-radius: 9px;
-    width: 200px;
-    height: 50px;
+    width: 13vw;
+    height: 7vh;
     text-align: center;
     position: absolute;
     left: 30px;
@@ -99,20 +105,20 @@
 }
 
 #aboutTarot{
-    float: left;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #aboutTarot h2{
     background-color: #F2EFEA;
-    float: left;
-    margin: 10px 50px 50px 20px;
+    margin: 10px 20px 50px 20px;
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-size: 64px;
+    font-size: 7vh;
     color: #162847;
-    width: 1345px;
+    width: 100vw;
     padding: 20px;
     border-radius: 9px;
     text-align: left;
@@ -125,12 +131,11 @@
 
 #aboutTarot #cardSearch{
     text-align: left;
-    margin: 10px 50px 50px 20px;
+    margin: 10px 20px 50px 20px;
     background-color: #E8E4C7;
-    width: 350px;
-    height: 250px;
+    width: 22vw;
+    height: 25%;
     border-radius: 9px;
-    float: left;
     padding: 10px;
 }
 
@@ -140,12 +145,12 @@
 }
 
 #cardSearch label{
-    background-color: #E8E4C7;
+    background-color: rgba(232, 228, 199, 0);
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-size: 35px;
+    font-size: 5vh;
     color: #162847;
 }
 
@@ -153,46 +158,49 @@
     background-color: #F2EFEA;
     border: none;
     border-radius: 9px;
-    width: 290px;
-    height: 65px;
+    width: 18vw;
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-weight: lighter;
     font-style: normal;
-    font-size: 30px;
+    font-size: 4vh;
     color: #162847;
     padding: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 #tarotDescription{
-    width: 920px;
-    height: 600px;
-    float: left;
+    flex: 50%;
+    width: 65vw;
+    height: 90%;
     background-color: #E8E4C7;
-    margin: 10px 50px 20px;
+    margin: 10px 20px 20px 20px;
     border-radius: 9px;
     text-align: right;
     position: relative;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 'text img';
+    z-index: 1;
 }
 
 #tarotDescription img{
     background-color: #E8E4C7;
-    width: 250px;
-    height: 400px;
+    width: 70%;
+    height: 80vh;
     box-shadow:
             0 4px 8px rgba(0, 0, 0, 0.25),
             0 4px 8px rgba(0, 0, 0, 0.25),
             0 4px 8px rgba(0, 0, 0, 0.25),
             0 4px 8px rgba(0, 0, 0, 0.25);
-    margin: 50px 100px 50px 50px;
+    margin: 35px 50px 50px 50px;
+    grid-area: img;
+    z-index: 2;
 }
 
 #tarotDescription .description{
     text-align: left;
     background-color: #F2EFEA;
-    width: 450px;
-    height: 500px;
     border-radius: 9px;
     position: absolute;
     left: 0;
@@ -200,20 +208,55 @@
     bottom: 0;
     right: 0;
     margin: 50px auto auto 30px;
+    word-wrap: break-word;
+    z-index: 2;
+    width: 40vw;
+    height: 80vh;
+    overflow: hidden;
+    grid-area: text;
 }
 
 #tarotDescription .description p{
-    background-color: #F2EFEA;
+    background-color: rgba(242, 239, 234, 0);
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-size: 40px;
+    font-size: 6vh;
     color: #162847;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
     margin: 30px 20px 20px;
     line-height: 35px;
+    display: block;
+    overflow-y: scroll;
+    height: 75vh;
 }
 
+@media screen and (max-width: 950px) {
+    #TarotReading h2{
+        font-size: 8vh;
+    }
+    #TarotReading img{
+        width: 35vmin;
+        height: 55vmin;
+    }
+    #TarotReading .description p{
+        font-size: 2.5vh;
+    }
+    #TarotReading button{
+        font-size: 3vh;
+        width: 15vw;
+    }
+    #aboutTarot #cardSearch{
+        width: 98%;
+    }
+    #cardSearch input{
+        width: 50%;
+    }
+    #tarotDescription .description p{
+        font-size: 5vh;
+    }
+
+}
 
 
