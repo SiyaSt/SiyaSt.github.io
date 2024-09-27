@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+a img{
+    margin: 26vh 10px 10px 10px;
+    width: 100vmin;
+}

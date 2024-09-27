@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 .side{
+    margin-top: 23vh;
     display: grid;
     grid-template-columns: auto ;
     grid-template-areas:
@@ -54,10 +55,12 @@ h3{
     .side{
         grid-template-areas: 'as1 as2 as3';
         align-items: center;
+            margin: 0;
     }
     aside{
         width: 175px;
         height: 175px;
+        margin: 20px;
     }
     #aside1 img{
         width: 130px;

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
-.row{
+.main1{
     display: flex;
     flex-wrap: wrap;
 }
@@ -8,8 +8,7 @@
 #TarotReading{
     flex: 60%;
     position: relative;
-    width: 1000vw;
-    height: 104vh;
+    height: 106.5vh;
     background-color: #e8e4c7;
     box-shadow:
             0 4px 8px rgba(0, 0, 0, 0.25),
@@ -17,8 +16,8 @@
             0 4px 8px rgba(0, 0, 0, 0.25),
              0 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
-    margin: 20px;
-    z-index: 1;
+    overflow-y: scroll;
+    margin: 26vh 20px 20px;
 }
 
 #TarotReading h2{
@@ -59,9 +58,7 @@
     text-align: center;
     padding: 5px;
     word-wrap: break-word;
-    z-index: 2;
     display: inline-block;
-    overflow: hidden;
 }
 
 #TarotReading .description p{
@@ -75,8 +72,6 @@
     margin-top: 7px;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
     display: block;
-    overflow-y: scroll;
-    height: 10vh;
 }
 
 #TarotReading button{
@@ -107,6 +102,7 @@
 #aboutTarot{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 24vh;
 }
 
 #aboutTarot h2{
@@ -181,7 +177,6 @@
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-areas: 'text img';
-    z-index: 1;
 }
 
 #tarotDescription img{
@@ -195,7 +190,6 @@
             0 4px 8px rgba(0, 0, 0, 0.25);
     margin: 35px 50px 50px 50px;
     grid-area: img;
-    z-index: 2;
 }
 
 #tarotDescription .description{
@@ -209,7 +203,6 @@
     right: 0;
     margin: 50px auto auto 30px;
     word-wrap: break-word;
-    z-index: 2;
     width: 40vw;
     height: 80vh;
     overflow: hidden;
