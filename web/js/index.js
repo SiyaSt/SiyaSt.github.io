@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
     tabs.forEach(tab => {
         const tabName = tab.getAttribute('data-tab');
         const tabUrls = {
-            'tab1': '/SiyaSt.github.io/web/index.html',
-            'tab2': '/SiyaSt.github.io/web/aboutTarot.html',
-            'tab3': '/SiyaSt.github.io/web/aboutUs.html'
+            'tab1': '/web/index.html',
+            'tab2': '/web/aboutTarot.html',
+            'tab3': '/web/aboutUs.html'
         };
 
         if (currentLocation === tabUrls[tabName]) {
