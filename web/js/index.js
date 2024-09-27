@@ -32,7 +32,8 @@ window.onclick = function (event) {
 document.addEventListener("DOMContentLoaded", function () {
     const tabs = document.querySelectorAll('.tab');
     const currentLocation = document.location.pathname;
-    let currentHash = document.location.hash;
+
+    console.log(currentLocation);
 
     tabs.forEach(tab => {
         const tabName = tab.getAttribute('data-tab');
@@ -42,7 +43,12 @@ document.addEventListener("DOMContentLoaded", function () {
             'tab3': '/SiyaSt.github.io/web/aboutUs.html'
         };
 
-        if (currentLocation + currentHash === tabUrls[tabName]) {
+        if (currentLocation === tabUrls[tabName]) {
+            tab.classList.add('active');
+        } else {
+            tab.classList.remove('active')
+        }
+        if (currentLocation === tabUrls[tabName].toLocaleLowerCase()) {
             tab.classList.add('active');
         } else {
             tab.classList.remove('active')
