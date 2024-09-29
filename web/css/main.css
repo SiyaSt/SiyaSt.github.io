@@ -251,9 +251,3 @@
     }
 
 }
-
-@media screen and (min-height: 1140px){
-    #tarotDescription .description p{
-        line-height: 35px;
-    }
-}
