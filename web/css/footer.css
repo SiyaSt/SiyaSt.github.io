@@ -29,12 +29,14 @@ footer a {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-size: 5vh;
     text-decoration: none;
-    color: #162847;
     margin-right: 50px;
 }
 
+footer a span{
+    color: #162847;
+    font-size: 4.5vh;
+}
 .grid-container {
     width: 100%;
     display: grid;
@@ -52,7 +54,7 @@ footer a {
 }
 
 @media screen and (min-width: 350px) {
-    footer a {
+    footer a span{
         font-size: 3vh;
     }
 }
