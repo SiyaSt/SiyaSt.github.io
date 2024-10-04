@@ -201,7 +201,7 @@
     word-wrap: break-word;
     width: 40vw;
     height: 80vh;
-    overflow: hidden;
+    overflow-y: scroll;
     grid-area: text;
 }
 
@@ -217,7 +217,7 @@
     margin: 30px 20px 20px;
     line-height: 6vh;
     display: block;
-    overflow-y: scroll;
+
     height: 75vh;
 }
 
@@ -256,13 +256,28 @@
 
 @media only screen and (max-width: 600px){
     #TarotReading img {
-        width: 30vmin;
-        height: 50vmin;
+        width: 32vmin;
+        height: 52vmin;
         margin-top: 200px;
     }
     #TarotReading button {
         font-size: 2.5vh;
         width: 20vw;
+    }
+    #tarotDescription img{
+        height: 30vh;
+        margin-left: 5px;
+    }
+    #tarotDescription .description{
+        width: 40vw;
+        height: 30vh;
+    }
+    #tarotDescription .description p{
+        font-size: 3vh;
+        line-height: 20px;
+    }
+    #cardSearch input{
+        width: 50vw;
     }
 }
 
@@ -276,4 +291,5 @@
         font-size: 2.5vh;
         width: 20vw;
     }
+
 }

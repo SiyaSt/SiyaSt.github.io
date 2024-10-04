@@ -136,9 +136,14 @@ h1{
 
     }
     #menu{
-        font-size: 3vh;
+        margin-left: 10px;
     }
-
+    .dropdown-content a {
+        font-size: 2vh;
+    }
+    .dropdown-content{
+        min-width: 5vw;
+    }
 }
 
 

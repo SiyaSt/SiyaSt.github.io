@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
-footer{
+footer {
     width: 100%;
     height: 150px;
     background-color: #F2EFEA;
-    box-shadow:
-            0 4px 8px rgba(0, 0, 0, 0.25),
-            0 4px 8px rgba(0, 0, 0, 0.25),
-            0 4px 8px rgba(0, 0, 0, 0.25),
-            0 4px 8px rgba(0, 0, 0, 0.25);
-    margin-bottom: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25),
+    0 4px 8px rgba(0, 0, 0, 0.25),
+    0 4px 8px rgba(0, 0, 0, 0.25),
+    0 4px 8px rgba(0, 0, 0, 0.25);
     text-align: left;
     padding-top: 20px;
     display: flex;
@@ -19,30 +17,32 @@ footer{
     flex-wrap: wrap;
 }
 
-footer span{
+footer span {
     background-color: rgba(242, 239, 234, 0);
     color: #E75136;
     margin-left: 20px;
 }
 
-footer a{
+footer a {
     background-color: rgba(242, 239, 234, 0);
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-size: 5vh;
+    font-size: 4vh;
     text-decoration: none;
     color: #162847;
     margin-right: 50px;
 }
 
 .grid-container {
+    width: 100%;
     display: grid;
     grid-template-columns: auto auto;
     background-color: #d8d5d4;
     padding: 10px;
 }
+
 .grid-item {
     background-color: rgb(227, 214, 206);
     border: 1px solid rgba(0, 0, 0, 0.8);
@@ -51,9 +51,8 @@ footer a{
     text-align: center;
 }
 
-@media only screen and(max-width: 450px) {
-    footer a{
+@media screen and (min-width: 350px) {
+    footer a {
         font-size: 3vh;
     }
-
 }
