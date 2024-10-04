@@ -51,7 +51,7 @@ h3{
     margin: 5px;
 }
 
-@media screen and (max-width: 750px) {
+@media only screen and (max-width: 750px) {
     .side{
         grid-template-areas: 'as1 as2 as3';
         align-items: center;
@@ -76,7 +76,7 @@ h3{
 
 }
 
-@media screen and (max-width: 650px){
+@media only screen and (max-width: 650px){
     #TarotReading{
         flex: 100%;
     }

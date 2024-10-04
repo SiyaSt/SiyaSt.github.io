@@ -105,7 +105,7 @@ h1{
     margin: 50px 70px 20px 30px;
 }
 
-@media  screen and (max-width: 950px){
+@media  only screen and (max-width: 950px){
     header{
         height: 24vh;
     }
@@ -126,4 +126,20 @@ h1{
     }
 
 }
+
+@media  only screen and (max-width: 450px){
+    header{
+        height: 24vh;
+    }
+    h1{
+        font-size: 4vh;
+
+    }
+    #menu{
+        font-size: 3vh;
+    }
+
+}
+
+
 
