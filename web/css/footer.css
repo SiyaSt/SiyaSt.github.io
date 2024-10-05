@@ -24,6 +24,7 @@ footer span {
 }
 
 footer a {
+    font-size: 4.5vh;
     background-color: rgba(242, 239, 234, 0);
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
@@ -31,12 +32,9 @@ footer a {
     font-style: normal;
     text-decoration: none;
     margin-right: 50px;
+    color: #162847;
 }
 
-footer a span{
-    color: #162847;
-    font-size: 4.5vh;
-}
 .grid-container {
     width: 100%;
     display: grid;
