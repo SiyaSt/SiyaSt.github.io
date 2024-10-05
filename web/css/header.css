@@ -11,7 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 
-header{
+.header{
     width: 100%;
     height: 22vh;
     top: 0;
@@ -26,7 +26,7 @@ header{
     z-index: 10;
 }
 
-h1{
+.header-h1{
     background-color: rgba(242, 239, 234, 0);
     color: #162847;
     font-family: "League Spartan", sans-serif;
@@ -37,7 +37,7 @@ h1{
     margin-left: 20px;
 }
 
-.logo{
+.header-logo{
     background-color: #F2EFEA;
     border-radius: 50%;
     height: 17vmin;
@@ -47,7 +47,7 @@ h1{
     margin-bottom: 2rem;
 }
 
-.logoImg{
+.header-logo-img{
     background-color: #96ADD6;
     border-radius: 50%;
     height: 17vmin;
@@ -55,14 +55,14 @@ h1{
 }
 
 
-.dropdown {
+.header-dropdown {
     position: relative;
     display: inline-block;
     background-color: rgba(242, 239, 234, 0);
     margin-bottom: 40px;
 }
 
-.dropdown-content {
+.header-dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -72,7 +72,7 @@ h1{
 }
 
 
-.dropdown-content a {
+.dropdown-content .tab {
     padding: 12px 16px;
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
@@ -85,10 +85,10 @@ h1{
 }
 
 
-.dropdown-content a:hover {background-color: #E75136;}
+.header-dropdown-content a:hover {background-color: #E75136;}
 
 
-.dropdown:hover .dropdown-content {display: block;}
+.header-dropdown:hover .header-dropdown-content {display: block;}
 
 .show{
     display: block;
@@ -106,21 +106,21 @@ h1{
 }
 
 @media  only screen and (max-width: 950px){
-    header{
+    .header{
         height: 24vh;
     }
-    h1{
+    .header-h1{
         font-size: 8vh;
 
     }
     #menu{
         font-size: 6vh;
     }
-    .logoImg{
+    .header-logo-img{
         height: 13vmin;
         width: 13vmin;
     }
-    .logo{
+    .header-logo{
         height: 13vmin;
         width: 13vmin;
     }
@@ -128,20 +128,20 @@ h1{
 }
 
 @media  only screen and (max-width: 450px){
-    header{
+    .header{
         height: 24vh;
     }
-    h1{
+    .header-h1{
         font-size: 4vh;
 
     }
     #menu{
         margin-left: 10px;
     }
-    .dropdown-content a {
+    .header-dropdown-content .tab {
         font-size: 2vh;
     }
-    .dropdown-content{
+    .header-dropdown-content{
         min-width: 5vw;
     }
 }
