@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
             'tab3': '/web/aboutUs.html'
         };
 
-        if (currentLocation === tabUrls[tabName]) {
+        if (currentLocation.includes(tabUrls[tabName])) {
             tab.classList.add('active');
         } else {
             tab.classList.remove('active')

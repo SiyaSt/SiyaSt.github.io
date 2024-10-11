@@ -6,10 +6,8 @@
     <title>Tarot reading</title>
     <link rel="icon" href="/images/eye.png" type="image">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/aside.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/collapsible.css">
+    <link rel="stylesheet" href="css/todolist.css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
 
@@ -31,36 +29,13 @@
         </div>
     </header>
     <main class="main1">
-            <section id="TarotReading">
-                <h2>Tarot</h2>
-                <button class="generate">Generate</button>
-                <div class="img-container">
-                    <img src="/images/the%20lovers.png" alt="" id="readingCard">
-                    <button class="collapsible">Description</button>
-                    <div class="content">
-                        <p>
-                            The Lovers card represents conscious connections and meaningful relationships. The arrival of this card
-                            in a Tarot reading shows that you have a beautiful, soul-honoring connection with a loved one. You may
-                            believe you have found your soul mate or life partner, and the sexual energy between you both goes way
-                            beyond instant gratification and lust to something that is very spiritual and almost Tantric.
-                        </p>
-                    </div>
-                </div>
-
-            </section>
-            <div class="side">
-                <aside id="aside1">
-                    <img src="/images/scales.png" alt="">
-                    <h3>Yes or No?</h3>
-                </aside>
-                <aside id="aside2">
-                    <img src="/images/cards (1).png" alt="">
-                    <h3>Future</h3>
-                </aside>
-                <aside id="aside3">
-
-                </aside>
-            </div>
+        <form id="myDIV" class="header">
+            <label for="myInput">My To Do List</label><br>
+            <input type="text" id="myInput" placeholder="To do...">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </form>
+        <ul id="myUL">
+        </ul>
     </main>
     <footer id="footer">
         <span class="material-symbols-outlined">mail <a href="mailto:tarotReading@gmail.com">tarotReading@gmail.com</a></span>
@@ -72,7 +47,7 @@
         Page load time in JS <span id="load-time">...</span> ms
     </footer>
     <script src="js/index.js"></script>
-    <script src="js/сollapsible.js"></script>
+    <script src="js/todolist.js"></script>
 </div>
 </body>
 </html>

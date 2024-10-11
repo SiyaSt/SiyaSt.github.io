@@ -15,7 +15,6 @@
     0 4px 8px rgba(0, 0, 0, 0.25),
     0 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
-    overflow-y: scroll;
     margin: 26vh 20px 20px;
 }
 
@@ -48,37 +47,14 @@
     display: block;
 }
 
-#TarotReading .description {
-    position: absolute;
-    margin: 60vh 40px;
-    background-color: #F2EFEA;
-    border-radius: 9px;
-    text-align: center;
-    padding: 5px;
-    word-wrap: break-word;
-    display: block;
-}
 
-#TarotReading .description p {
-    background-color: rgba(242, 239, 234, 0);
-    font-family: "League Spartan", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 25px;
-    color: #162847;
-    margin-top: 7px;
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
-    display: block;
-}
 
-#TarotReading button {
+#TarotReading .generate {
     background-color: #F2EFEA;
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-size: 4vh;
     color: #162847;
     border: none;
     border-radius: 9px;
@@ -93,7 +69,7 @@
     cursor: pointer;
 }
 
-#TarotReading button:hover {
+#TarotReading .generate:hover {
     background-color: #E75136;
 }
 
@@ -230,12 +206,11 @@
         width: 32vmin;
         height: 52vmin;
     }
-
-    #TarotReading .description p {
+    #TarotReading .content p {
         font-size: 2.5vh;
     }
 
-    #TarotReading button {
+    #TarotReading .generate {
         font-size: 3vh;
         width: 15vw;
     }
@@ -254,13 +229,13 @@
 
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
     #TarotReading img {
         width: 32vmin;
         height: 52vmin;
         margin-top: 200px;
     }
-    #TarotReading button {
+    #TarotReading .generate {
         font-size: 2.5vh;
         width: 20vw;
     }

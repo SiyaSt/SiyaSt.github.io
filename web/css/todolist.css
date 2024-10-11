@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+ul {
+    padding: 0;
+    margin: 0 0 170px;
+}
+
+ul li {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #F2EFEA;
+    font-size: 18px;
+    transition: 0.2s;
+    color: #162847;
+}
+
+
+ul li:hover {
+    background: #E8E4C7;
+}
+
+
+ul li.checked {
+    background: #E8E4C7;
+    color: #E75136;
+    text-decoration: line-through;
+}
+
+
+ul li.checked::before {
+    content: '✔';
+    position: absolute;
+    border-color: #E75136;
+    top: 9px;
+    left: 16px;
+    height: 15px;
+    width: 10px;
+}
+
+
+.close {
+    background: #E8E4C7;
+    color: #162847;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color:  #E75136;
+    color: #162847;
+}
+
+.header {
+    margin-top:200px ;
+    background-color: #E75136;
+    padding: 30px 40px;
+    text-align: left;
+
+}
+
+.header label{
+    background-color: #E75136;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: #162847;
+    font-size: 30px;
+}
+
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+input {
+    margin: 20px 0 ;
+    border: none;
+    border-radius: 9px;
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #E8E4C7;
+    color: #162847;
+    border-radius: 9px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.addBtn:hover {
+    background-color: #E75136;
+}

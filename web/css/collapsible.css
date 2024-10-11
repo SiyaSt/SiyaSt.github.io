@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+.collapsible {
+    background-color: #e8e4c7;
+    color: #162847;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    position: absolute;
+    margin: 60vh 40px;
+    border-radius: 9px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.activeColl, .collapsible:hover {
+    background-color: #F2EFEA;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: #162847;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.activeColl:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #F2EFEA;
+    word-wrap: break-word;
+    display: block;
+    position: absolute;
+    border-radius: 0 0 9px 9px;
+    text-align: center;
+    margin: 66vh 40px;
+}
+
+
+.content p {
+    background-color: rgba(242, 239, 234, 0);
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    color: #162847;
+    margin: 7px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    display: block;
+}
