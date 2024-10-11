@@ -39,7 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const tabUrls = {
             'tab1': '/web/index.html',
             'tab2': '/web/aboutTarot.html',
-            'tab3': '/web/aboutUs.html'
+            'tab3': '/web/aboutUs.html',
+            'tab4': '/web/todolist.html'
         };
 
         if (currentLocation.includes(tabUrls[tabName])) {
