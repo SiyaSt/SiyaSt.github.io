@@ -58,7 +58,6 @@ function loadList() {
     });
 }
 
-
 function removeItem(value) {
     const tasks = JSON.parse(localStorage.getItem("taskList")) || [];
     const updatedTasks = tasks.filter(task => task.text !== value);
