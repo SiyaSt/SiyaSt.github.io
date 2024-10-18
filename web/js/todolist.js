@@ -82,7 +82,7 @@ function addCloseButton(li) {
 }
 
 function updateLocalStorage() {
-    const listItems = document.querySelectorAll("ul li");
+    const listItems = document.querySelectorAll("#myUL li");
     const checkedItems = [];
 
     listItems.forEach(item => {
