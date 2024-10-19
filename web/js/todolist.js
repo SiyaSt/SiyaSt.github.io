@@ -33,14 +33,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 function saveList() {
-    const items = [];
     const listItems = document.querySelectorAll("#myUL li");
-    listItems.forEach(item => {
-        items.push({
-            text: item.textContent.replace("\u00D7", ''),
-            checked: item.classList.contains("checked")
-        });
-    });
+    const items = Array.from(listItems).map(item => ({
+        text: item.textContent.replace("\u00D7", ''),
+        checked: item.classList.contains("checked")
+    }));
     localStorage.setItem("taskList", JSON.stringify(items));
 }
 

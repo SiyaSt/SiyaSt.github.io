@@ -21,8 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             addCloseButton(todoItem);
 
-            saveList();
+
         });
+        saveList();
     }
 
     function fetchTodoList() {
@@ -46,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 })
                 .then(data => {
                     const filteredData = data.filter(filterCondition);
-                    localStorage.setItem('todoList', JSON.stringify(filteredData));
                     resolve(filteredData);
                 })
                 .catch(error => reject(error));
