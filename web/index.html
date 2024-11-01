@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/collapsible.css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
 
 </head>
 <body>
@@ -36,7 +38,8 @@
                 <h2>Tarot</h2>
                 <button class="generate">Generate</button>
                 <div class="img-container">
-                    <img src="/images/the%20lovers.png" alt="" id="readingCard">
+                    <img src="/images/the%20lovers.png" alt="front" id="frontCard" class="card hidden">
+                    <img src="/images/back.jpg" alt="back" id="backCard" class="card">
                     <button class="collapsible">Description</button>
                     <div class="content">
                         <p>
@@ -74,6 +77,7 @@
     </footer>
     <script src="js/index.js"></script>
     <script src="js/сollapsible.js"></script>
+    <script src="js/cardFlip.js"></script>
 </div>
 </body>
 </html>

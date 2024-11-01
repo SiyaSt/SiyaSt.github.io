@@ -30,7 +30,6 @@
 }
 
 #TarotReading img {
-    background-color: #E8E4C7;
     width: 45vmin;
     height: 70vmin;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25),
@@ -45,6 +44,7 @@
     right: 0;
     margin: 12vh auto;
     display: block;
+    background-color: transparent;
 }
 
 
@@ -71,6 +71,11 @@
 
 #TarotReading .generate:hover {
     background-color: #E75136;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
 }
 
 #aboutTarot {
@@ -152,14 +157,10 @@
     grid-template-areas: 'text img';
 }
 
-#tarotDescription img {
+#tarotDescription .aboutTarot-canvas {
     background-color: #E8E4C7;
     width: 70%;
     height: 80vh;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25),
-    0 4px 8px rgba(0, 0, 0, 0.25),
-    0 4px 8px rgba(0, 0, 0, 0.25),
-    0 4px 8px rgba(0, 0, 0, 0.25);
     margin: 35px 50px 50px 50px;
     grid-area: img;
 }
@@ -239,7 +240,7 @@
         font-size: 2.5vh;
         width: 20vw;
     }
-    #tarotDescription img{
+    #tarotDescription .aboutTarot-canvas{
         height: 30vh;
         margin-left: 5px;
     }
